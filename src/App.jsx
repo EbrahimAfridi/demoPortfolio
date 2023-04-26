@@ -1,15 +1,16 @@
 import './App.css'
 import React from 'react'
-import Grid from './Grid'
-import {usersData} from "../src/Grid"
+import Header from "./components/Header.jsx";
+import Intro from './components/Intro';
+import Project from './components/Projects/Projects';
+
 function App(){
 
   return (
-    <div className="gap-7 flex flex-wrap">
-      <Grid users={usersData} />
-      <Grid users={usersData} />
-      <Grid users={usersData} />
-      <Grid users={usersData} />
+    <div className=" bg-gradient-to-b from-blue-900 via-blue-600 to-blue-400">
+      <Header/>
+      <Intro/>
+      <Project/>
     </div>
   )
 
